@@ -33,7 +33,7 @@ Here is a simple way on how to use WebSocket with p5:
 https://github.com/abachman/p5.websocket
 
 To make their example work as expected you have to make minor tweaks:
-1. Don't forget to change your WebSocket Server URL (line 12 - sketch.js)
-2. Update the if function of your broadcasting Server (line 21 - server.js) from:
+1. Don't forget to change your WebSocket Server URL (line 12 - sketch.js (client app))
+2. Update the if function of your broadcasting Server (line 21 - server.js (server app)) from:
    `if (client !== ws && client.readyState === WebSocket.OPEN) {`
    to `if (client.readyState === WebSocket.OPEN) {` otherwise you can only see your drawing on the other clients.
